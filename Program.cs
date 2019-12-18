@@ -8,7 +8,7 @@ namespace UserDefinedTypes
 {
     public class Program
     {
-        public bool CheckID(EmployeeClass employee)
+        public static bool CheckID(EmployeeClass employee)
         {
             
 
@@ -37,7 +37,9 @@ namespace UserDefinedTypes
             worker.type = EmployeeType.Recruiter;
 
 
-            CheckID(employee);
+           bool x = CheckID(employee);
+            Console.WriteLine($"x: {x}");
+            Console.ReadLine();
         }
     }
    public  class EmployeeClass
